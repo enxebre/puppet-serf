@@ -33,11 +33,11 @@ class serf (
   $config_group     = $::serf::params::config_group,
 ) inherits serf::params {
 
-  include install
-  include config
+  include serf::install
+  include serf::config
 
-  Class['install'] ->
-  Class['config']
+  Class['serf::install'] ->
+  Class['serf::config']
 
   # Redis service
   service { $service_name :

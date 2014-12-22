@@ -1,4 +1,4 @@
-class serf::config{
+class serf::config inherits serf{
 
   File {
     owner  => $::serf::config_owner,

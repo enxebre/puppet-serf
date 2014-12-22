@@ -30,8 +30,8 @@ class serf::params{
   $log_level        = 'info'
   $log_file         = "${log_dir}/serf.log"
   $node             = $::fqdn
-  $protocol         = $::serf::params::protocol
-  $tags             = $::serf::params::tags
+  $protocol         = 2
+  $tags             = []
   $rpc_addr         = "${bind}:7373"
   $install_path     = '/usr/local/bin/'
   $install_method   = 'url'

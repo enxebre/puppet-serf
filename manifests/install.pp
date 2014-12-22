@@ -1,4 +1,4 @@
-class serf::install{
+class serf::install inherits serf{
 
   # mitchellh refers to anything 64bit as amd64
   case $::architecture {
